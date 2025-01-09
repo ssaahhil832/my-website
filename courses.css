@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 0;
+}
+
+/* Branch Section */
+.branch-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh; /* Each section occupies full viewport height */
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    background: #232222;
+}
+
+.branch-section:nth-child(even) {
+    background: #4c4c4c; /* Alternate background for better visuals */
+}
+
+.branch-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Image Styling */
+.branch-image {
+    flex: 1;
+    transform: translateX(-100%) rotate(-20deg);
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    opacity: 0;
+}
+
+.branch-image.right {
+    transform: translateX(100%) rotate(20deg);
+}
+
+.branch-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Info Styling */
+.branch-info {
+    flex: 1;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.branch-info h2 {
+    font-size: 24px;
+    color: #dbdcdc;
+    margin-bottom: 10px;
+}
+
+.branch-info p {
+    font-size: 16px;
+    color: #ebe3e3;
+    line-height: 1.5;
+}
+
+/* Animation When In View */
+.branch-section.in-view .branch-image {
+    transform: translateX(0) rotate(0);
+    opacity: 100;
+}
+
+.branch-section.in-view .branch-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+

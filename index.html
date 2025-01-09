@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+             <img src="https://www.jntuacea.ac.in/images/jntuaceatp.png"  class="logo" alt="college logo" />
+            </div >
+            <div class="logo-text">
+            <a href="https://www.jntua.ac.in/"> 📓๋࣭ Jntua cea  ⭑✐  </a>
+            </div>
+             
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="programs.html">Courses</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="btech.html">B.Tech</a></li>
+                        <li><a href="mtech.html">M.Tech</a></li>
+                        <li><a href="mba.html">MBA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#apply">Apply</a></li>
+                <li><a href="#contact-info">Contact Us</a></li>
+                <li><a href="login.html">Log-in</a></li>
+            </ul>
+
+            
+        </nav>
+        
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="page">
+        <div class="welcome-box">
+            <div class="welcome-content">
+                <p>Discover the future of education</p>
+                <h1>Welcome to JNTUA CEA ,</h1>
+                <p>Where innovation, knowledge, and excellence shape<br> 
+                    the engineers of tomorrow, building a brighter future.</p>
+            </div>
+            <div class="welcome-image">
+                <img src="https://cdn.pixabay.com/photo/2018/06/27/07/45/college-student-3500990_640.jpg" alt="Student" />
+            </div>
+            <div class="button-box">
+                <button class="explore-btn">Explore Programs</button>
+                <button class="apply-btn">Apply</button>
+            </div>
+        </div>
+    </section>
+<!--  image section -->
+  
+<section id="college-images">
+    <h2>Explore Our College</h2>
+    <div class="image-grid">
+        <div class="image-item">
+            <img src="https://media.istockphoto.com/id/136192949/photo/university-of-tennessee-hill.jpg?s=612x612&w=0&k=20&c=KF6ujCeGT1tIseDHm6dsQ5LeoiXnl5v3MhHj_wuQ5fA=" />
+            <p class="image-caption">Our State-of-the-Art Campus Building</p>
+        </div>
+        <div class="image-item">
+            <img src="https://img.freepik.com/premium-photo/library-with-many-books-shelves-knowledge-education-learning-concept-generative-ai_159242-23146.jpg?semt=ais_hybrid" alt="Library" />
+            <p class="image-caption">Well-Stocked Library for Students</p>
+        </div>
+        <div class="image-item">
+            <img src="https://media.istockphoto.com/id/1502846052/photo/textured-soccer-game-field-with-neon-fog-center-midfield.jpg?s=612x612&w=0&k=20&c=LPSo6ps1NfZ_xviL0tmhnnrcLjjFXAQhsYr3qAOfviY=" alt="Sports Ground" />
+            <p class="image-caption">Spacious Sports Ground for Extracurriculars</p>
+        </div>
+        <div class="image-item">
+            <img src="https://cdn.pixabay.com/photo/2023/10/21/03/57/classroom-8330653_640.jpg" alt="Classroom" />
+            <p class="image-caption">Modern Classrooms for Interactive Learning</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!--video section-->
+
+<section id="video-section">
+
+    <div class="video-container">
+        <div class="video-wrapper">
+            <!-- Replace the source with your video file -->
+            <video id="mainVideo" autoplay muted loop>
+                <source src="c:\Users\Dell\myspace\Downloads\1851190-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div class="text-overlay">
+            <div class="animated-text text1">Welcome to Our College</div>
+            <div class="animated-text text2">Shape Your Future Here</div>
+            <div class="animated-text text3">Excellence in Education</div>
+        </div>
+
+        <div class="video-controls">
+            <button class="control-btn" onclick="document.getElementById('mainVideo').play()">
+                <i class="play-icon"></i> Play
+            </button>
+            <button class="control-btn" onclick="document.getElementById('mainVideo').pause()">
+                <i class="pause-icon"></i> Pause
+            </button>
+            <button class="control-btn" onclick="toggleMute()">
+                <i class="volume-icon"></i> Mute
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>Discover our college programs </h1>
+        <div class="about-grid">
+            <div class="block" data-link="https://www.space.com/">
+                <h2 >Our Mission</h2>
+                <p>To provide quality education, foster innovation, and prepare students for a successful engineering career.</p>
+            </div>
+            
+
+            <div class="block">
+                <h2>Our Facilities</h2>
+                <p>State-of-the-art infrastructure, modern labs, and resources to foster academic and personal growth.</p>
+            
+            </div>
+            <div class="block">
+                <h2>Student Life</h2>
+                <p>A vibrant campus with extracurricular activities, sports, and cultural events to enhance growth.</p>
+            </div>
+            <div class="block">
+                <h2>Admission Process</h2>
+                <p>Simple and transparent admission process with easy steps to secure your place in our programs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--contact section-->
+    <section id ="contact-info">
+    <div class="contact-container">
+        <div class="contact-header">
+            <h2>Contact Us</h2>
+            <p>Have questions about admissions? We're here to help!</p>
+        </div>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><strong>Address:</strong>Jntua cea , JNTU Road, Anantapur</p>
+                <p><strong>Email:</strong> jntu-admission@gmail.com</p>
+                <p><strong>Phone:</strong> +91 9491282099</p>
+                <p><strong>Office Hours:</strong><br>
+                Monday - Friday: 9:00 AM - 5:00 PM<br>
+                Saturday: 10:00 AM - 2:00 PM<br>
+                Sunday: Closed</p>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form id="admissionQuery" action="/submit" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="queryType">Type of Query*</label>
+                        <select id="queryType" name="queryType" required>
+                            <option value="">Select Query Type</option>
+                            <option value="admission">Admission Process</option>
+                            <option value="programs">Programs & Courses</option>
+                            <option value="scholarships">Scholarships</option>
+                            <option value="requirements">Entry Requirements</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message*</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <form id="contactForm">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        <p class="success-message" id="successMessage">Sent Successfully!</p>
+                    </form>
+                
+                    
+                  </form>
+            </div>
+        </div>
+        
+        <div class="social-links">
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+<script>
+
+
+
+
+
+// Select the div element
+const block = document.querySelector('.block');
+
+// Add a click event listener to the div
+block.addEventListener('click', () => {
+    // Retrieve the link from the data attribute and open it
+    const link = block.getAttribute('data-link');
+    window.open(link, '_blank'); // Opens the link in a new tab
+});
+
+
+
+
+function toggleMute() {
+            const video = document.getElementById('mainVideo');
+            video.muted = !video.muted;
+        }
+
+
+
+ // Select the form and success message elements
+ const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        // Add an event listener to the form
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form from refreshing the page
+            successMessage.style.display = 'block'; // Show the success message
+
+            // Optionally, clear the form inputs (if any)
+            contactForm.reset();
+
+            // Hide the message after 3 seconds (optional)
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 3000); // 3000ms = 3 seconds
+        });       
+
+</script>
+
+
+    
+</body>
+</html>

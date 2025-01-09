@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA Courses</title>
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+             <img src="https://www.jntuacea.ac.in/images/jntuaceatp.png"  class="logo" alt="college logo" />
+            </div >
+            <div class="logo-text">
+            <a href="https://www.jntua.ac.in/"> 📓๋࣭ Jntua cea  ⭑✐  </a>
+            </div>
+             
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="programs.html">Courses</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="btech.html">B.Tech</a></li>
+                        <li><a href="mtech.html">M.Tech</a></li>
+                        <li><a href="mba.html">MBA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#apply">Apply</a></li>
+                <li><a href="#contact-info">Contact Us</a></li>
+                <li><a href="login.html">Log-in</a></li>
+            </ul>
+
+            
+        </nav>
+        
+    </header>
+    <main>
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_U2OoMCaDSPm6H_In0sRhbvz1uwGM088ssQ&s" alt="MBA in Finance">
+                </div>
+                <div class="branch-info">
+                    <h2>MBA in Finance</h2>
+                    <p>MBA in Finance focuses on financial management, investment strategies, and corporate finance. It's ideal for those aiming for careers in banking, consulting, or investment firms.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-info">
+                    <h2>MBA in Marketing</h2>
+                    <p>This course emphasizes branding, advertising, and market research. Graduates often work in sales, digital marketing, or product management roles in top organizations.</p>
+                </div>
+                <div class="branch-image right">
+                    <img src="https://e-gmat.com/blogs/wp-content/uploads/2021/01/mba-marketing.png" alt="MBA in Marketing">
+                </div>
+            </div>
+        </section>
+
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-image">
+                    <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_Is_MBA_In_HR_And_The_Use_Of_An_MBA_In_HR.jpg" alt="MBA in Human Resources">
+                </div>
+                <div class="branch-info">
+                    <h2>MBA in Human Resources</h2>
+                    <p>MBA in HR focuses on workforce management, recruitment, and organizational development. It's suited for those passionate about people management and leadership.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script >
+        document.addEventListener("scroll", () => {
+            const sections = document.querySelectorAll(".branch-section");
+            const triggerHeight = window.innerHeight / 1.2;
+    
+            sections.forEach((section) => {
+                const top = section.getBoundingClientRect().top;
+                const bottom = section.getBoundingClientRect().bottom;
+    
+                // Add "in-view" when the section is in the viewport
+                if (top < triggerHeight && bottom > 0) {
+                    section.classList.add("in-view");
+                } else {
+                    // Remove "in-view" when the section is out of the viewport
+                    section.classList.remove("in-view");
+                }
+            });
+        });
+
+
+
+    </script>
+</body>
+</html>

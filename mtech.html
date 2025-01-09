@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Tech Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <header>
+        <nav>
+            <div class="logo">
+             <img src="https://www.jntuacea.ac.in/images/jntuaceatp.png"  class="logo" alt="college logo" />
+            </div >
+            <div class="logo-text">
+            <a href="https://www.jntua.ac.in/"> 📓๋࣭ Jntua cea  ⭑✐  </a>
+            </div>
+             
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="programs.html">Courses</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="btech.html">B.Tech</a></li>
+                        <li><a href="mtech.html">M.Tech</a></li>
+                        <li><a href="mba.html">MBA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#apply">Apply</a></li>
+                <li><a href="#contact-info">Contact Us</a></li>
+                <li><a href="login.html">Log-in</a></li>
+            </ul>
+
+            
+        </nav>
+        
+    </header>
+    <main>
+        <!-- M.Tech in Computer Science -->
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-image">
+                    <img src="mtech-cs.jpg" alt="M.Tech in Computer Science">
+                </div>
+                <div class="branch-info">
+                    <h2>M.Tech in Computer Science</h2>
+                    <p>This course focuses on advanced topics in algorithms, data science, artificial intelligence, and machine learning. It's ideal for careers in software development, research, and academia.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- M.Tech in Electronics and Communication -->
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-info">
+                    <h2>M.Tech in Electronics and Communication</h2>
+                    <p>Specializing in embedded systems, VLSI design, and wireless communication, this course is perfect for careers in chip design, robotics, and IoT development.</p>
+                </div>
+                <div class="branch-image right">
+                    <img src="mtech-ece.jpg" alt="M.Tech in Electronics and Communication">
+                </div>
+            </div>
+        </section>
+
+        <!-- M.Tech in Mechanical Engineering -->
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-image">
+                    <img src="mtech-mech.jpg" alt="M.Tech in Mechanical Engineering">
+                </div>
+                <div class="branch-info">
+                    <h2>M.Tech in Mechanical Engineering</h2>
+                    <p>This course emphasizes design, thermal engineering, and manufacturing processes, preparing students for roles in automotive, aerospace, and industrial manufacturing sectors.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- M.Tech in Civil Engineering -->
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-info">
+                    <h2>M.Tech in Civil Engineering</h2>
+                    <p>Focusing on structural engineering, environmental engineering, and geotechnical design, this program is suited for careers in infrastructure development and urban planning.</p>
+                </div>
+                <div class="branch-image right">
+                    <img src="mtech-civil.jpg" alt="M.Tech in Civil Engineering">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script >
+         document.addEventListener("scroll", () => {
+            const sections = document.querySelectorAll(".branch-section");
+            const triggerHeight = window.innerHeight / 1.2;
+    
+            sections.forEach((section) => {
+                const top = section.getBoundingClientRect().top;
+                const bottom = section.getBoundingClientRect().bottom;
+    
+                // Add "in-view" when the section is in the viewport
+                if (top < triggerHeight && bottom > 0) {
+                    section.classList.add("in-view");
+                } else {
+                    // Remove "in-view" when the section is out of the viewport
+                    section.classList.remove("in-view");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Programs</title>
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <header>
+        <nav>
+            <div class="logo">
+             <img src="https://www.jntuacea.ac.in/images/jntuaceatp.png"  class="logo" alt="college logo" />
+            </div >
+            <div class="logo-text">
+            <a href="https://www.jntua.ac.in/"> 📓๋࣭ Jntua cea  ⭑✐  </a>
+            </div>
+             
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="programs.html">Courses</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="btech.html">B.Tech</a></li>
+                        <li><a href="mtech.html">M.Tech</a></li>
+                        <li><a href="mba.html">MBA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#apply">Apply</a></li>
+                <li><a href="#contact-info">Contact Us</a></li>
+                <li><a href="login.html">Log-in</a></li>
+            </ul>
+            
+
+            
+        </nav>
+        
+    </header>
+    <main>
+        <!-- Branch Sections -->
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-image left">
+                    <img src="https://uploads.sarvgyan.com/2014/06/cse-image.jpg" alt="Computer Science">
+                </div>
+                <div class="branch-info">
+                    <h2>COMPUTER SCIENCE </h2>
+                    <p>The future of Computer Science lies in AI, quantum computing, robotics, and blockchain, driving automation, smarter systems, enhanced security, and innovations that will revolutionize industries and transform everyday life.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-info">
+                    <h2>Electronics and Communication</h2>
+                    <p>Explore circuits, communication systems, and embedded technologies.</p>
+                </div>
+                <div class="branch-image right">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVOT1U8_JW4LyjxMKcwAdlJ57TI_JGqw5d1A&s" alt="Electronics and Communication">
+                </div>
+            </div>
+        </section>
+
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-image left">
+                    <img src="https://gmitkolkata.org/wp-content/uploads/2024/04/mj_11433_2.jpg" alt="Mechanical Engineering">
+                </div>
+                <div class="branch-info">
+                    <h2>Mechanical Engineering</h2>
+                    <p>Dive into design, manufacturing, and thermal engineering concepts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-info">
+                    <h2>Civil Engineering</h2>
+                    <p>Learn about construction, urban planning, and structural analysis.</p>
+                </div>
+                <div class="branch-image right">
+                    <img src="https://www.shutterstock.com/image-photo/beautiful-image-engineering-helmet-sunset-600nw-2481313365.jpg" alt="Civil Engineering">
+                </div>
+            </div>
+        </section>
+
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-image left">
+                    <img src="https://www.hit.ac.in/images/EEE1.jpg" alt="Electrical Engineering">
+                </div>
+                <div class="branch-info">
+                    <h2>Electrical Engineering</h2>
+                    <p>Understand power systems, electrical circuits, and renewable energy technologies.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="branch-section">
+            <div class="branch-content">
+                <div class="branch-info">
+                    <h2>Information Technology</h2>
+                    <p>Focus on networking, databases, and web development.</p>
+                </div>
+                <div class="branch-image right">
+                    <img src="https://t4.ftcdn.net/jpg/04/17/28/93/360_F_417289346_hrs0D4Lo8dSv3aWDqkQpRB0U9PbtFX6n.jpg" alt="Information Technology">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("scroll", () => {
+            const sections = document.querySelectorAll(".branch-section");
+            const triggerHeight = window.innerHeight / 1.2;
+    
+            sections.forEach((section) => {
+                const top = section.getBoundingClientRect().top;
+                const bottom = section.getBoundingClientRect().bottom;
+    
+                // Add "in-view" when the section is in the viewport
+                if (top < triggerHeight && bottom > 0) {
+                    section.classList.add("in-view");
+                } else {
+                    // Remove "in-view" when the section is out of the viewport
+                    section.classList.remove("in-view");
+                }
+            });
+        });
+    </script>
+    
+    
+    
+
+</body>
+</html>
